@@ -10,10 +10,17 @@ Create the empty calendar:
 ./create-calendar.sh 2024-05-06 2025-05-06 > $HOME/calendar.txt
 ```
 
-Ensure a calendar can be filled from any directory:
+Fill the calendar from any directory:
 
 ```
 ln -f -s $HOME/repos/calendar/fill-calendar.sh $HOME/.local/bin/fill-calendar.sh
+ln -f -s $HOME/repos/calendar/archive-past-calendar-events.sh $HOME/.local/bin/archive-past-calendar-events.sh
+```
+
+Automatically archive past events:
+
+```bash
+crontab -l | cat - <(echo "0 */6 * * * archive-past-calendar-events.sh /path/to/calender-dir") | crontab -
 ```
 
 ## Usage

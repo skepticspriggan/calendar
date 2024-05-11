@@ -4,6 +4,10 @@
 
 _What are the steps to reproduce the problem?_
 
+```
+git checkout 72417b1eb1c52a2df73974837bcb687642c7851d
+```
+
 Create an empty calendar:
 
 ```
