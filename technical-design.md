@@ -31,6 +31,8 @@ Use go to fill the calendar.
 
 Bash is harder to use in this more complicated use-case. It is difficult to add a separator between different types of events that occur at the same date because the while loops in bash create a new scope from which outer variables cannot be called.
 
+The bash version will remain as a reference.
+
 **How will the input calendar and events be parameterized?**
 
 _Option 1 - Explicit in config_
