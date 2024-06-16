@@ -44,7 +44,14 @@ Fill calendar and cache results:
 ./fill-calendar.sh > calendar-future.txt
 ```
 
+Print cached calendar:
+
+```
+cat calendar-future.txt
+```
+
 ## Todo
 
 - Filter by keyword
 - Print compact version without project and context
+- Automatically fill calendar and cache results after event files change
