@@ -23,6 +23,12 @@ Automatically archive past events:
 crontab -l | cat - <(echo "0 */6 * * * archive-past-calendar-events.sh /path/to/calender-dir") | crontab -
 ```
 
+Automatically fill calendar and cache results:
+
+```bash
+crontab -l | cat - <(echo "0 */1 * * * cd /path/to/calendar-dir && make DIR=/path/to/calender-dir") | crontab -
+```
+
 ## Usage
 
 Add one-time events:
