@@ -60,7 +60,7 @@ awk -v start="$(date +'%F')" \
             if [ -s /tmp/date-events.txt ]; then
               echo -n "; $event_description" | tee --append /tmp/date-events.txt
             else
-              echo -n " $event_description"
+              echo -n " $event_description" | tee --append /tmp/date-events.txt
             fi
           fi
       done
